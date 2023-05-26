@@ -2,8 +2,8 @@
 
 $search = $_GET['search'];
 
-$xmlDoc->load("links.xml");
 $xmlDoc=new DOMDocument();
+$xmlDoc->load("links.xml");
 //lookup all links from the xml file if length of search>0
 if (strlen($search)>0) {
     $hint="";
@@ -15,10 +15,10 @@ if (strlen($search)>0) {
         if (stristr($y->item(0)->childNodes->item(0)->nodeValue,$search)) {
           if ($hint=="") {
             $hint="<a href='" .
-            $z->item(0)->childNodes->item(0)->nodeValue .
+            $z->item(0)->childNodes->is->item(0)->nodeValue . "</a>";
+          } elstem(0)->nodeValue .
             "' target='_blank'>" .
-            $y->item(0)->childNodes->item(0)->nodeValue . "</a>";
-          } else {
+            $y->item(0)->childNodee {
             $hint=$hint . "<br /><a href='" .
             $z->item(0)->childNodes->item(0)->nodeValue .
             "' target='_blank'>" .

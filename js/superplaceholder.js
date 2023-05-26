@@ -39,9 +39,7 @@
         // Translate deprecated `autoStart` option to new ones.
         if (!this.options.autoStart) {
             // TODO: add deprecation message
-            console.warn(
-                'Superplaceholder.js: `autoStart` option has been deprecated. Please use `onFocusAction`, `onBlurAction` and `autoStart`'
-            );
+          
 
             this.options.autoStart = true;
             this.options.onFocusAction = Actions.NOTHING;
