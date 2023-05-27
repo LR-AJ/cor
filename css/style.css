@@ -11060,12 +11060,39 @@ Customer Count Start
 .customer-count-content h2:after {
     position: var(--absolute);
     content: "";
-    width: 80px;
+    width: 190px;
     height: 4px;
     background: var(--corp-yellow);
     left: var(--left-50);
     transform: translateX(-50%);
-    bottom: -40px;
+    bottom: -20px;
+}
+.flip{
+    position: absolute;
+    backface-visibility: hidden;   
+}
+.our-process-inner>i{
+    text-align: left;
+}
+.card {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transform-style: preserve-3d;
+        transform-origin: center right;
+        transition: transform 1s;
+        }
+.flip-back{      
+        /* position: absolute;   */
+        padding: 0px 20px;
+        /* background: slateblue; */
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+}
+
+.card.is-flipped {
+transform: translateX(-100%) rotateY(-180deg);
 }
 
 .cro-main-blue {
@@ -11097,6 +11124,12 @@ Customer Count Start
 
 .cro-blue {
     background: var(--corp-blue);
+}
+.cro-text-orange{
+    color:var(--corp-yellow);
+}
+.cro-text-blue{
+    color: navy;
 }
 
 .cro-yellow {
@@ -15745,8 +15778,6 @@ ul.latest-blogs li {
     right: 0;
     left: 0;
     z-index: 999999;
-    width: 100%;
-    background: #fff !important;
     width: 100%;
     background: #fff;
     -webkit-box-shadow: 2px 9px 25px -12px rgb(0 0 0 / 75%);
