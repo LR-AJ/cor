@@ -15771,6 +15771,17 @@ ul.latest-blogs li {
     position: absolute;
     content: none !important;
 }
+.back-to-top {
+    position: fixed;
+    right: 68px;
+    bottom: 50px;
+    z-index: 99;
+}
+.b24-widget-button-position-bottom-left{
+    right: 60px !important;
+    bottom: 100px !important;
+    left: auto !important;
+}
 
 .bg-black {
     position: fixed;
