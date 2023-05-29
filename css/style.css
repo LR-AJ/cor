@@ -39,6 +39,24 @@
         scroll-behavior: smooth;
     }
 }
+.custom_slide-track {
+    width: 70%;
+    height:5rem;
+    margin:auto;
+    gap: 1rem;
+    overflow: hidden;
+  }
+  .custom_slide img{
+    width: 150px;
+    height: auto;;
+    animation-delay: 0.1s;
+    animation: scroll 10s linear infinite  ;
+}
+  
+@keyframes scroll {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(500%)}
+  }
 
 body {
     margin: 0;
@@ -129,11 +147,23 @@ h4,
         font-size: 1.5rem;
     }
 }
+table th{
+    padding: 20px;
+    color: #fff;
+}
+table tbody td{
+    padding: 20px;
+}
 
 h5,
 .h5 {
     font-size: 1.25rem;
 }
+.points_style {
+    box-shadow: 3px 3px 3px 3px gray;
+    padding: 1rem; 
+    border-left: 5px solid #091E3E;
+} 
 
 h6,
 .h6 {
@@ -4869,9 +4899,7 @@ fieldset:disabled .btn {
     padding: 1rem 1.25rem;
 }
 
-.accordion-body p {
-    color: #ffffff !IMPORTANT;
-}
+
 
 .accordion-flush .accordion-collapse {
     border-width: 0;
@@ -15777,7 +15805,7 @@ ul.latest-blogs li {
     bottom: 50px;
     z-index: 99;
 }
-.b24-widget-button-position-bottom-left{
+.b24-widget-button-position-bottom-right{
     right: 60px !important;
     bottom: 100px !important;
     left: auto !important;
@@ -16530,7 +16558,7 @@ Ipad Css
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
     .search-inner {
-        text-align: center;
+        text-align: left;
     }
     #search-banner .row {
         justify-content: center;
