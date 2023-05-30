@@ -10,6 +10,54 @@
      }
 
  });
+  // Get all sections that have an ID defined
+  const sections = document.querySelectorAll(".mix[id]");
+  console.log(sections);
+  // Add an event listener listening for scroll
+  window.addEventListener("scroll", navHighlighter);
+  function navHighlighter() {
+     // Get current scroll position
+     let scrollY = window.pageYOffset;
+    // Now we loop through sections to get height, top and ID values for each
+
+     sections.forEach(current => {
+         const sectionHeight = current.offsetHeight;
+         const sectionTop = current.offsetTop - 550;
+         var sectionId = current.getAttribute("id");
+        //  var nav = document.querySelector('.navbar').nextElementSibling;
+        
+         //  remove uneven traverse of navbar by get content height
+            //  const container = document.querySelector(".col-sm-8");
+            //  const cont_height = container.offsetHeight;
+            //  var x = document.querySelector('.page-header').nextElementSibling;
+         
+                 /*
+         - If our current scroll position enters the space where current section on screen is, 
+         add .active class to corresponding navigation link, else remove it
+         - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector
+         */
+         // when navroot not exist in Page
+            //  if(x.classList.contains('bg-white')){
+                 if (
+                 scrollY > sectionTop &&
+                 scrollY <= sectionTop + sectionHeight 
+                 ){
+                 document.querySelector("#nav-case a[href*=" + sectionId + "]").classList.add("active");
+                 } else {
+                 document.querySelector("#nav-case a[href*=" + sectionId + "]").classList.remove("active");
+                 }
+                //  if(scrollY > cont_height+300  ){
+                //      document.querySelector("#list-example").parentElement.classList.remove('position-sticky');
+                     
+                //  }else{
+                //      document.querySelector("#list-example").parentElement.classList.add('position-sticky');
+                     
+                //  }
+             
+         });   
+     };
+  
+ //  end of System
 
  $('.title').click(function() {
      $(this).next('.list-unstyled').toggle(200);

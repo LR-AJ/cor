@@ -4898,6 +4898,10 @@ fieldset:disabled .btn {
 .accordion-body {
     padding: 1rem 1.25rem;
 }
+.active_hover:hover{
+    color:#fff !important;
+    background-color: #efa434;
+}
 
 
 
@@ -12845,7 +12849,9 @@ Main Content Section Start
 #list-example {
     width: 95%;
 }
-
+.active{
+    background: #efa434;
+}
 .main-content-middle p {
     font-family: 'Inter';
     font-style: normal;
