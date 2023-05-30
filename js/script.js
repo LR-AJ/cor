@@ -12,7 +12,6 @@
  });
   // Get all sections that have an ID defined
   const sections = document.querySelectorAll(".mix[id]");
-  console.log(sections);
   // Add an event listener listening for scroll
   window.addEventListener("scroll", navHighlighter);
   function navHighlighter() {
@@ -27,9 +26,8 @@
         //  var nav = document.querySelector('.navbar').nextElementSibling;
         
          //  remove uneven traverse of navbar by get content height
-            //  const container = document.querySelector(".col-sm-8");
-            //  const cont_height = container.offsetHeight;
-            //  var x = document.querySelector('.page-header').nextElementSibling;
+             const container = document.querySelector(".mix2");
+             const cont_height = container.offsetHeight;
          
                  /*
          - If our current scroll position enters the space where current section on screen is, 
@@ -46,13 +44,13 @@
                  } else {
                  document.querySelector("#nav-case a[href*=" + sectionId + "]").classList.remove("active");
                  }
-                //  if(scrollY > cont_height+300  ){
-                //      document.querySelector("#list-example").parentElement.classList.remove('position-sticky');
+                 if(scrollY > cont_height+1200  ){
+                     document.querySelector("#nav-case").parentElement.classList.remove('position-sticky');
                      
-                //  }else{
-                //      document.querySelector("#list-example").parentElement.classList.add('position-sticky');
+                 }else{
+                     document.querySelector("#nav-case").parentElement.classList.add('position-sticky');
                      
-                //  }
+                 }
              
          });   
      };
