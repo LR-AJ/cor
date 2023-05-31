@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
-
+html {
+    scroll-padding-top: 11rem;
+  }
 :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
@@ -12836,6 +12838,7 @@ Main Content Section Start
     margin-bottom: 15px;
     color: #18191F;
 }
+
 
 .main-content-middle {
     padding-left: 20px;
