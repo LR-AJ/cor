@@ -743,6 +743,85 @@
             </div>
         </div>
     </section>
+    
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5 pt-0 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5 pb-0">
+            <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
+                <h1 class="mb-0">Testimonial</h1><br>
+                <h5 class="fw-bold text-primary text-uppercase">What Our Clients Say About Our Digital Services</h5>
+
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/Shilpa.webp" style="width: 60px; height: 60px;">
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Shilpa Khurana </h4>
+                            <p>Co-founder, Skillofy.com</p>
+
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        I wholeheartedly endorse LegalRaasta to any general counsel or company looking for 
+                        top-tier expertise to address a variety of concerns. The ability of the LegalRaasta 
+                        Team to manage a variety of issues has left me quite impressed by my direct 
+                        interactions with them.
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/user2.webp" style="width: 60px; height: 60px;">
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Shikha Bhatia</h4>
+                            <p>Founder, Shiksha Learning Academy</p>
+
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        I spoke with a few lawyers, and they all said it would be a difficult case. One of 
+                        them gave me the name of LegalRaasta, whose team worked incredibly hard to compile 
+                        information and specialists to back up our trademark case. LegalRaasta professionals 
+                        successfully settled our case.
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/user3.webp" style="width: 60px; height: 60px;">
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Dinesh Singh</h4>
+                            <p>CEO, Cilpra Tech Pvt. Ltd.</p>
+
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        Since Legalraasta's service fees are reasonable for a variety of legal services and 
+                        they have a great team and a hassle-free experience, I would recommend them over 
+                        others. I had a wonderful time and felt that the hour-long free consultation was 
+                        worth it. Thanks for your help with company registration.
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/Rahul.webp" style="width: 60px; height: 60px;">
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Nitin Batra</h4>
+                            <p>CEO, CaterWow Pvt. Ltd.</p>
+
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        LegalRaasta specializes in giving all of its clients the best services possible by 
+                        easing their stress, comprehending their wants, and offering quick fixes. I firmly 
+                        recommend LegalRaasta Technologies to anyone needing assistance with tax, business 
+                        registration, or legal difficulties.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
    
     <!-- Card flip Call -->
     <script>
@@ -962,9 +1041,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script>
-       
-</script>
-    <script>
       
         window.setTimeout(function () {
         (function(w,d,u){
@@ -978,7 +1054,6 @@
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/script.js"></script>
     <script src="js/superplaceholder.js"></script>
-    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script>
         superplaceholder({
             el: searchKey,
@@ -1005,64 +1080,8 @@
             });
         });
     </script>
-    
+    <script src="js/owlcarousel/owl.carousel.min.js"></script>
 
-
-    <script>
-        function getParam(p) {
-            var match = RegExp('[?&]' + p + '=([^&]*)').exec(window.location.search);
-            return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
-        }
-
-        function getExpiryRecord(value) {
-            var expiryPeriod = 90 * 24 * 60 * 60 * 1000; // 90 day expiry in milliseconds
-
-            var expiryDate = new Date().getTime() + expiryPeriod;
-            return {
-                value: value,
-                expiryDate: expiryDate
-            };
-        }
-
-        function addGclid() {
-            var gclidParam = getParam('gclid');
-            var gclidFormFields = ['gclid_field', 'foobar']; // all possible gclid form field ids here
-            var gclidRecord = null;
-            var currGclidFormField;
-
-            var gclsrcParam = getParam('gclsrc');
-            var isGclsrcValid = !gclsrcParam || gclsrcParam.indexOf('aw') !== -1;
-
-            gclidFormFields.forEach(function(field) {
-                if (document.getElementById(field)) {
-                    currGclidFormField = document.getElementById(field);
-                }
-            });
-
-            if (gclidParam && isGclsrcValid) {
-                gclidRecord = getExpiryRecord(gclidParam);
-                localStorage.setItem('gclid', JSON.stringify(gclidRecord));
-            }
-
-            var gclid = gclidRecord || JSON.parse(localStorage.getItem('gclid'));
-            var isGclidValid = gclid && new Date().getTime() < gclid.expiryDate;
-
-            if (currGclidFormField && isGclidValid) {
-                currGclidFormField.value = gclid.value;
-            }
-        }
-
-        window.addEventListener('load', addGclid);
-    </script>
-
-    <script>
-        // $(document).ready(function() {
-        //     $('select').selectize({
-        //         sortField: 'text'
-        //     });
-        // });
-    </script>
-    <!-- <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="8acecfd493cfa004da5a4035-|49" defer></script> -->
 </body>
 
 </html>
