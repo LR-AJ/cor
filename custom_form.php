@@ -56,7 +56,7 @@ function validateInput() {
 	$_POST['email'] = $email;
 	$_POST['contact'] = $mobile;
 }
-header('Location: https://www.legalraasta.com/private-limited-registration');
+header('Location: https://www.companyregistrationonline.in/private-limited-registration');
 validateInput();
 
 if (!empty($_POST['ref']) && isset($_POST['ref'])) {
@@ -93,7 +93,7 @@ if (!empty($leadId) && !empty($redirect)) {
 	// header('Location: ' . $_POST['redirect'] . '?name=' . $_POST['name'] . '&contact=' . $_POST['contact'] . '&id=' . $leadId . '&email=' . $_POST['email']);
 } else {
 
-	header("Location: https://www.legalraasta.com/thanks/");
+	header("Location:https://companyregistrationonline.in/thanks/");
 }
 
 function bitrix_funtion($postParam, $reqHeaders) {
