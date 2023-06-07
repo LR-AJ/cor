@@ -22,10 +22,16 @@ if (isset($_POST['name']) && isset($_POST['email'])) {
 	$service_name = [
 		'001' =>'Private Limited Company Registeration',
 		'002' =>'Limited Liability Partnership (LLP) Registration',
-		'003' =>'OPC Registeration',
-		'004' =>'Nidhi Company Registeration',
+		'003' =>'Nidhi Company Registeration',
+		'004' =>'OPC Registeration',
 		'005' =>'Section 8 Registeration',
-		'006' =>'NBFC Registeration',
+		'006' =>'Micro Finance Company',
+		'007' =>'NBFC Registeration',
+		'008' =>'NBFC Sales India',
+		'009' =>'NBFC Takeover',
+		'010' =>'NBFC MFI',
+		'011' =>'Buy NBFC',
+		'012' =>'Sell NBFC',
 	];
 
 	$string_convert = $service_code;
