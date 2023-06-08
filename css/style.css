@@ -15161,6 +15161,9 @@ ul.latest-blogs li {
         padding-bottom: 10px;
         height: auto;
     }
+    .position-sm-relative{
+        position: relative;
+    }
 }
 
 .megamenu h6 {
@@ -21901,40 +21904,6 @@ span.device-back {
     text-align: center;
     color: #333333;
 }
-
-.trademark-search-text1 {
-    margin-top: 25px;
-}
-
-.trademark-search-text1 ul {
-    list-style: none;
-    padding-left: 0px;
-}
-
-.trademark-search-text1 ul li {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 30px;
-    color: #191A15;
-    position: relative;
-    padding-left: 40px;
-    margin-bottom: 15px;
-}
-
-.trademark-search-text1 li:after {
-    position: absolute;
-    content: "";
-    background: url("../img/yellow-tick-icon.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 24px;
-    height: 24px;
-    top: 2px;
-    left: 0px;
-}
-
 @media only screen and (max-width:992px) {
     .search-your-company2 button {
         width: 100px;
