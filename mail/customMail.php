@@ -10,9 +10,9 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 require 'autoload.php';
 // Mail blocker code
-$str = "salescoordintorlr@gmail.com";
-$domainBlacklist = ['gmail.com', 'hotmail.com'];
-$domain = array_shift(explode('@',$str ));
+// $str = "salescoordintorlr@gmail.com";
+// $domainBlacklist = ['gmail.com', 'hotmail.com'];
+// $domain = array_shift(explode('@',$str ));
 // if(!in_array($domain,$str)){
 	if (isset($_POST['name']) && isset($_POST['email'])) {
 		
@@ -62,8 +62,8 @@ $domain = array_shift(explode('@',$str ));
 		$mail->SMTPDebug  = 1;
 		$mail->Host = "smtp.gmail.com";
 		$mail->SMTPAuth = true;
-		$mail->Username   = "legalraastatech3@gmail.com";
-		$mail->Password   = "vaxvybuqcamodwcg";
+		$mail->Username   = "testlegal125@gmail.com";
+		// $mail->Password   = "ilgzsoockkqrkhyc";
 		$mail->Port = 465;
 		$mail->SMTPSecure = "ssl";
 
@@ -71,7 +71,7 @@ $domain = array_shift(explode('@',$str ));
 		//Email Settings
 		$mail->isHTML(true);
 		$mail->setFrom($email, $name);
-		$mail->addAddress("legalraastatech3@gmail.com","Admin"); //enter you email address
+		$mail->addAddress("testlegal125@gmail.com","Admin"); //enter you email address
 		$mail->Subject = ("New Submission");
 		$mail->Body = '<html>
 

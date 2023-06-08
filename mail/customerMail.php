@@ -52,15 +52,15 @@ if (isset($_POST['name']) && isset($_POST['email'])) {
 		$custmail->SMTPDebug  = 1;
 		$custmail->Host = "smtp.gmail.com";
 		$custmail->SMTPAuth = true;
-		$custmail->Username   = "legalraastatech3@gmail.com";
-		$custmail->Password ="vaxvybuqcamodwcg";
+		$custmail->Username   = "testlegal125@gmail.com";
+		// $custmail->Password ="ilgzsoockkqrkhyc";
 		$custmail->Port = 465;
 		$custmail->SMTPSecure = "ssl";
 		//Email Settings
 		$custmail->isHTML(true);
-		$custmail->setFrom('legalraastatech3@gmail.com', 'Company Registeration Online');
+		$custmail->setFrom('testlegal125@gmail.com', 'COR.com');
 		$custmail->addAddress($_POST['email'], $_POST['name']);
-		$custmail->Subject = ucwords("Thank you For Showing Interest In $service_name[$service_code]");;
+		$custmail->Subject = ucwords("Thank you For Showing Interest In. $service_name[$service_code]");
         if(isset($_POST['service_code']) && $service_code == '001') {
 			$Body ='<html>
 			<body>

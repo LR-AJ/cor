@@ -7,7 +7,7 @@ function emailPassage() {
 
 
             $.ajax({
-                    url: '/Company Registration/mail/customMail.php',
+                    url: 'mail/customMail.php',
                     method: 'POST',
                     dataType: 'json',
                     data: { name: name.val(), email: email.val(),phone:phone.val(),service_code:service_code.val()},
@@ -16,7 +16,7 @@ function emailPassage() {
                 },
             });
             $.ajax({
-                    url: '/Company Registration/mail/customerMail.php',
+                    url: 'mail/customerMail.php',
                     method: 'POST',
                     dataType: 'json',
                     data: { name: name.val(), email: email.val(),phone:phone.val(),service_code:service_code.val()},
