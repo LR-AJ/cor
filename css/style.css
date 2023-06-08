@@ -10958,7 +10958,7 @@ Search Banner Start
 
 .social-links {
     background: var(--white);
-    position: var(--absolute);
+    /* position: var(--absolute); */
     top: var(--w50);
     padding: var(--br8);
     left: var(--zero);
