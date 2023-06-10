@@ -6,7 +6,7 @@ $domain = array("LLP Registeration"=>"llp-registration.html", "Private Limited C
 $list = ['LLP Registeration','NBFC License','Nidhi Company Registeration','Private Limited Company Registration','Section 8 Company Registration','OPC Registration','Micro Finance Company'];
 if(in_array($search,$list)){
   echo("check");
-  header('Location:'.'http://localhost/Company%20Registration/'. $domain[$search]);
+  header('Location:'.'https://test.legalraasta.com/cor/'. $domain[$search]);
   // header("Location: https://www.legalraasta.com/thanks/");
 
 }
