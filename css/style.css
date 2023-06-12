@@ -10846,7 +10846,7 @@ Search Banner Start
 }
 
 .search-inner h2 span {
-    color: var(--corp-yellow) !Important;
+    color: var(--corp-blue) !Important;
 }
 
 .search-box {
@@ -11176,9 +11176,14 @@ transform: translateX(-100%) rotateY(-180deg);
 }
 
 .cro-yellow {
-    background: var(--corp-yellow);
+    background: var(--corp-blue-light);
 }
-
+#check h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+}
+.flip h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
 /*
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Our Services Area Start
@@ -11690,7 +11695,7 @@ footer {
 }
 
 .footer-inner h3 {
-    color: var(--corp-yellow);
+    color: var(--white);
     font-weight: var(--fw-700);
     font-size: var(--font-18);
 }
