@@ -11143,6 +11143,9 @@ transform: translateX(-100%) rotateY(-180deg);
     background: #1571a7;
     border-radius: 10px;
 }
+.cro-bg-yellow{
+    background-color: var(--corp-yellow);
+}
 
 .our-process-inner {
     display: var(--flex);
